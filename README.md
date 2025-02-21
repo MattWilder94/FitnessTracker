@@ -31,11 +31,11 @@ The app allows users to log workout routines, track calorie intake, and set fitn
 ### Steps
 1. **Clone the repository**:
    ```sh
-   git clone https://github.com/your-username/FitnessTracker.git
+   git clone https://github.com/MattWilder94/FitnessTracker.git
    cd FitnessTracker
-dotnet restore
-dotnet ef database update
-dotnet run
+    dotnet restore
+    dotnet ef database update
+    dotnet run
 
 ## Usage
 - Naviagte to the Workouts page to log exercises
