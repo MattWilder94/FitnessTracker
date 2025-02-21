@@ -1,8 +1,23 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
+public enum FitnessGoal
+{
+    Weightloss,
+    Weightgain,
+    MaintainWeight
+}
+
+public enum ActivityLevel
+{
+    Sedentary,
+    Light,
+    Moderate,
+    Heavy
+}
+
 namespace FitnessTracker.Models.Users
 {
-    public class User
+    public class UserInfo
     {
         [Key]
         public int UserId { get; set; }
@@ -14,16 +29,16 @@ namespace FitnessTracker.Models.Users
         public int UserAge { get; set; }
 
         [Required(ErrorMessage = "Height is required")]
-        public string UserHeight { get; set; } = string.Empty;
+        public int UserHeight { get; set; }
 
         [Required(ErrorMessage = "Weight is required")]
         public int UserWeight { get; set; }
 
         [Required(ErrorMessage = "Fitness goal is required")]
-        public string FitnessGoal { get; set; } = string.Empty;
+        public FitnessGoal FitnessGoal { get; set; }
 
         [Required(ErrorMessage = "Please select an activity level")]
-        public string ActivityLevel { get; set; } = string.Empty;
+        public ActivityLevel ActivityLevel { get; set; }
 
         [Required(ErrorMessage = "Please input a caloric target")]
         public int CaloricTarget { get; set; }

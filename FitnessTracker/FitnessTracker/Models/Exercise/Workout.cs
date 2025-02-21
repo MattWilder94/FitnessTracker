@@ -26,7 +26,5 @@ namespace FitnessTracker.Models.Exercise
 
         public DateTime WorkoutDate { get; set; }
 
-        public string Notes { get; set; } = string.Empty;
-
     }
 }
