@@ -38,6 +38,6 @@ The app allows users to log workout routines, track calorie intake, and set fitn
     dotnet run
 
 ## Usage
-- Naviagte to the Workouts page to log exercises
-- Use the Nutrition page to trak calorie intake
+- Navigate to the Workouts page to log exercises
+- Use the Nutrition page to track calorie intake
 - View progress over time based on logged data
